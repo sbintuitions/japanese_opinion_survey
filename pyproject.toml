@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "japanese-opinion-survey"
+version = "0.1.0"
+description = ""
+authors = ["masaya-ohagi <masaya.ohagi@sbintuitions.co.jp>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jsonlines = "^4.0.0"
+pandas = "^2.2.0"
+numpy = "^1.26.3"
+scipy = "^1.12.0"
+transformers = "^4.37.2"
+sentencepiece = "^0.1.99"
+accelerate = "^0.26.1"
+protobuf = "^4.25.2"
+tiktoken = "^0.6.0"
+pydantic-settings = "^2.1.0"
+openai = "^1.12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
