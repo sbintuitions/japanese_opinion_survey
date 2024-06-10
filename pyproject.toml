@@ -9,14 +9,15 @@ python = "^3.10"
 jsonlines = "^4.0.0"
 pandas = "^2.2.0"
 numpy = "^1.26.3"
-scipy = "^1.12.0"
-transformers = "^4.37.2"
-sentencepiece = "^0.1.99"
-accelerate = "^0.26.1"
-protobuf = "^4.25.2"
-tiktoken = "^0.6.0"
-pydantic-settings = "^2.1.0"
 openai = "^1.12.0"
+flexeval = {path = "./src/flexeval", develop = true }
+scipy = "^1.13.0"
+requests = "^2.31.0"
+nltk = "^3.8.1"
+mecab-python = "^1.0.0"
+ipadic = "^1.0.0"
+spacy = "^3.7.4"
+ruff = "^0.4.7"
 
 
 [build-system]
