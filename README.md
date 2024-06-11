@@ -1,7 +1,9 @@
 # JAPANION QA SURVEY
 
 ## Environment Construction
+```bash
 docker build -t japanion_qa -f ./Dockerfile .
+```
 
 
 ## Running example
