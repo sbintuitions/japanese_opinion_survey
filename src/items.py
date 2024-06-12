@@ -6,18 +6,20 @@ from flexeval.core.multiple_choice_dataset.base import MultipleChoiceDataset, Mu
 class Choice:
     content: str
     real_distribution: float
-    predicted_distributions: list[float]
+    predicted_distributions: float
 
 
 @dataclass
 class QA:
-    prefix: str
+    context_information: str
+    heading: str
     question: str
     choices: list[Choice]
     year: str
     topic: str
     question_class: str
     question_type: str
+    question_number: str
 
 
 class MyChoiceDataset(MultipleChoiceDataset):

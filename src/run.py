@@ -8,7 +8,7 @@ from flexeval.scripts.common import (
 )
 from jsonargparse import ActionConfigFile, ArgumentParser
 import logging
-from load_data import load_japanese_opinion_survey
+from load_data import load_japanese_opinion_survey_hf
 from prompt_creators import create_japanese_opinion_survey_prompt
 from utils import make_permutations
 from typing import Any
@@ -97,7 +97,7 @@ if __name__ == "__main__":
     parser = ArgumentParser(parser_mode="jsonnet")
 
     parser.add_subclass_arguments(LanguageModel, nested_key="language_model", required=True)
-    parser.add_argument("--input", type=str, default="./resources/v3.csv")
+    parser.add_argument("--input", type=str, default="sbintuitions/japanion_qa")
     parser.add_argument("--save_dir", type=str, default=None, help="Directory to save the outputs")
     parser.add_argument("--force", type=bool, default=False, help="Overwrite the save_dir if it exists")
     parser.add_argument("--config", action=ActionConfigFile)
@@ -120,7 +120,7 @@ if __name__ == "__main__":
     else:
         labels = NUM_LABELS
 
-    qas = load_japanese_opinion_survey(file_path=args.input, include_reject=False, include_succession=False)
+    qas = load_japanese_opinion_survey_hf(dataset_name=args.input, include_reject=False, include_succession=False)
 
     results = evaluate(
         args.language_model, qas=qas, labels=labels, all_permutations=args.all_permutations, measure_by_choices=args.measure_by_choices
