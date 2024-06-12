@@ -15,5 +15,5 @@ poetry run python src/run.py \
   --language_model HuggingFaceLM \
   --language_model.model_name "tokyotech-llm/Swallow-13b-instruct-v0.1" \
   --save_dir "results/request/Swallow-13b-instruct-v0.1" \
-  --input "/workspace/japanese_opinion_survey/resources/v3.csv"
+  --input "sbintuitions/japanion_qa"
 ```
