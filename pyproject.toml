@@ -18,6 +18,8 @@ mecab-python = "^1.0.0"
 ipadic = "^1.0.0"
 spacy = "^3.7.4"
 ruff = "^0.4.7"
+google-api-python-client = "^2.133.0"
+jiwer = "^3.0.4"
 
 
 [build-system]
