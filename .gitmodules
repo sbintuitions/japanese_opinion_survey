@@ -1,3 +1,0 @@
-[submodule "src/flexeval"]
-	path = src/flexeval
-	url = git@github.com:sbintuitions/flexeval.git

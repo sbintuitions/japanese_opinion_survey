@@ -10,7 +10,7 @@ jsonlines = "^4.0.0"
 pandas = "^2.2.0"
 numpy = "^1.26.3"
 openai = "^1.12.0"
-flexeval = {path = "./src/flexeval", develop = true }
+flexeval = "^0.3.1"
 scipy = "^1.13.0"
 requests = "^2.31.0"
 nltk = "^3.8.1"
