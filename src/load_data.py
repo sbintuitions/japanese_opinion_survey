@@ -3,7 +3,7 @@ from datasets import load_dataset
 
 import pandas as pd
 
-from src.items import QA, Choice
+from items import QA, Choice
 
 
 def load_japanese_opinion_survey(file_path: str, include_reject: bool, include_succession: bool) -> list[QA]:
